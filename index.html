@@ -132,3 +132,11 @@
     <!-- Right Image Card -->
     <div class="bg-white rounded-3xl shadow-xl p-12 flex justify-center items-center"> </div>
     <img src= "handheart.png" alt = "Help-The-Hearts" class="max-w-xs">
+<script>
+  const btn = document.getElementById("menuBtn");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
