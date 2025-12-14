@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help the Hearts</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Custom Theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            primary: '#e53935',
+            soft: '#fdf1f1',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-body bg-soft text-gray-800">
+
+<!-- ================= HEADER ================= -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-red-100">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <img src="logo.png" alt="Help the Hearts Logo" class="w-10 h-10 object-contain">
+      <span class="text-2xl font-display font-bold text-primary">
+        Help the Hearts
+      </span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+      <a href="#" class="hover:text-primary transition">About Us</a>
+      <a href="#" class="hover:text-primary transition">Impact</a>
+      <a href="#" class="hover:text-primary transition">Healthy Living</a>
+      <a href="#" class="hover:text-primary transition">Get Involved</a>
+      <a href="#" class="bg-primary text-white px-6 py-2 rounded-full shadow hover:bg-red-600 transition">
+        ❤️ Help a Heart
+      </a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="pt-36 pb-24">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+
+    <!-- Left Content -->
+    <div>
+      <span class="inline-block mb-4 px-4 py-1 rounded-full bg-red-100 text-primary text-sm font-medium">
+        Keep Hope Beating
+      </span>
+
+      <h1 class="text-5xl md:text-6xl font-display font-bold leading-tight mb-6">
+        Every Heart <br>
+        <span class="text-primary">Deserves Hope</span>
+      </h1>
+
+      <p class="text-gray-600 text-lg max-w-xl mb-8">
+        Supporting children with heart disease and their families through comprehensive care,
+        emotional support, and the resources they need to thrive.
+      </p>
+
+      <div class="flex gap-4">
+        <a href="#" class="bg-primary text-white px-7 py-3 rounded-full shadow hover:bg-red-600 transition">
+          ❤️ Help A Heart →
+        </a>
+        <a href="#" class="px-7 py-3 rounded-full border border-red-200 text-primary hover:bg-red-50 transition">
+          Read Stories
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Image Card -->
+    <div class="bg-white rounded-3xl shadow-xl p-12 flex justify-center items-center">
+      <img src="heart-hand.png" alt="Heart and Hand" class="max-w-xs">
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>
+
